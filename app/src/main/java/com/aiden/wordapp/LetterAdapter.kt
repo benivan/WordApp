@@ -22,7 +22,6 @@ class LetterAdapter : RecyclerView.Adapter<LetterAdapter.LetterViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LetterViewHolder {
         val itemBinding =
             ItemViewBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-
         return LetterViewHolder(itemBinding)
     }
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/letterListFragment"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/letterListFragment"
+        android:name="com.aiden.wordapp.LetterListFragment"
+        android:label="Words">
+        <action
+            android:id="@+id/action_letterListFragment_to_wordListFragment"
+            app:destination="@id/wordListFragment"/>
+    </fragment>
+
+<fragment
+    android:id="@+id/wordListFragment"
+    android:name="com.aiden.wordapp.WordListFragment"
+    android:label="Words start with {letter}"
+    tools:layout="@layout/fragment_letter_layout">
+    <argument
+        android:name="letter"
+        app:argType="String"/>
+</fragment>
+
+
+
+
+
+
+</navigation>
