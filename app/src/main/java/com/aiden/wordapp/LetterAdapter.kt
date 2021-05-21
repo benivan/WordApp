@@ -3,6 +3,7 @@ package com.aiden.wordapp
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.aiden.wordapp.databinding.FragmentLetterLayoutBinding
 import com.aiden.wordapp.databinding.ItemViewBinding
 
 class LetterAdapter : RecyclerView.Adapter<LetterAdapter.LetterViewHolder>() {
@@ -16,6 +17,10 @@ class LetterAdapter : RecyclerView.Adapter<LetterAdapter.LetterViewHolder>() {
 
             fun bind(letter:Char) {
                 itemBinding.buttonItem.text =letter.toString()
+                itemBinding.buttonItem.setOnClickListener{
+
+
+                }
             }
     }
 
