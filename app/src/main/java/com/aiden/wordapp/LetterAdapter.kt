@@ -18,7 +18,7 @@ class LetterAdapter : RecyclerView.Adapter<LetterAdapter.LetterViewHolder>() {
             fun bind(letter:Char) {
                 itemBinding.buttonItem.text =letter.toString()
                 itemBinding.buttonItem.setOnClickListener{
-
+                    it.
 
                 }
             }
